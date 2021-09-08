@@ -2,7 +2,7 @@ package com.rocketslab.aula08;
 
 import com.rocketslab.interfaces.Aula;
 
-public class Aula08Test extends Aula {
+public class Aula08 extends Aula {
     @Override
     public void run() {
         Player mario = new Player("Mario", 40, 1.52);
