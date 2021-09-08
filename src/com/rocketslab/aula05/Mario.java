@@ -59,7 +59,7 @@ public class Mario {
     }
 
     public void characteristics() {
-        System.out.printf("Name: %s\nAge: %s\nHeight: %s\nStamina: %s\n", this.name, this.age, this.height, this.stamina);
+        System.out.printf("Mario: { Name: %s, Age: %s, Height: %s, Stamina: %s }\n", this.name, this.age, this.height, this.stamina);
     }
 
     public void loseStamina() {

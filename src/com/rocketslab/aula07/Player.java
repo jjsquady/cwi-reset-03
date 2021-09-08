@@ -1,6 +1,6 @@
-package com.rocketslab.aula06;
+package com.rocketslab.aula07;
 
-public class Mario {
+public class Player {
     private String name;
     private double height;
     private final int age;
@@ -10,16 +10,7 @@ public class Mario {
 
     private String powers = "Superhuman Strength, Superhuman Durability, Superhuman Stamina, Superhuman Speed";
 
-    public Mario(){
-        this.name = "Mario Bros";
-        this.height = 1.50;
-        this.age = 40;
-        this.stamina = 100;
-        this.coins = 0;
-        this.lives = 1;
-    }
-
-    public Mario(String name, int age, double height) {
+    public Player(String name, int age, double height) {
         this.name = name;
         this.age = age;
         this.height = height;
@@ -32,9 +23,9 @@ public class Mario {
         System.out.printf("Powers: %s\n", this.powers);
     }
 
-    public void characteristics() {
+    public void stats() {
         System.out.printf(
-                "Mario: { Name: %s, Age: %s, Height: %s, Stamina: %s, Coins: %s, Lives: %s }\n",
+                "Player: { Name: %s, Age: %s, Height: %s, Stamina: %s, Coins: %s, Lives: %s }\n",
                 this.name, this.age, this.height, this.stamina, this.coins, this.lives
         );
     }
@@ -73,6 +64,16 @@ public class Mario {
         } else {
             this.lives = 0;
             this.stamina = 0;
+        }
+    }
+
+    public void jump() {
+        if (this.name.equals("Mario") || this.name.equals("mario")) {
+            System.out.println("Mario pulou " + this.height * 0.5 + " de altura.");
+        }
+
+        if (this.name.equals("Luigi") || this.name.equals("luigi")) {
+            System.out.println("Luigi pulou " + this.height * 2 + " de altura.");
         }
     }
 }
