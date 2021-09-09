@@ -1,7 +1,7 @@
 package com.rocketslab.aula10;
 
-public class Mario extends Player {
-    private Yoshi yoshi;
+public class Mario extends Player{
+    protected Yoshi yoshi;
 
     public Mario(String name, int age, double height) {
         super(name, age, height);
@@ -17,7 +17,7 @@ public class Mario extends Player {
         this.yoshi = yoshi;
     }
 
-    public void marioMounted() {
+    public void youshiMounted() {
         if (this.yoshi != null) {
             speak("Mario está montado no Yoshi!");
         } else {

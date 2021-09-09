@@ -14,6 +14,4 @@ public class Luigi extends Player {
     public void fly() {
         speak("Luigi está voando!");
     }
-
-
 }

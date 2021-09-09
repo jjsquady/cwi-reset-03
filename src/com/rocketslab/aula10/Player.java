@@ -19,6 +19,10 @@ public abstract class Player {
         this.lives = 1;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public void powers() {
         System.out.printf("Powers: %s\n", this.powers);
     }
